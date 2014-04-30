@@ -1,12 +1,12 @@
 require 'spec_helper'
 
 describe LoopRideController do
+  before do
+    #allow(controller).to receive(current_user)
+    allow(Actionpark::Request).to receive(:create)
+  end
 
   describe "GET 'start'" do
-    before do
-      allow(Actionpark::Request).to receive(:create)
-    end
-
     it "returns http success" do
       get 'start'
       response.should be_success

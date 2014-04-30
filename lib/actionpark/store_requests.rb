@@ -4,7 +4,7 @@ module Actionpark
       Request.create(
         controller: controller_name,
         action: action_name,
-        user: current_user
+        #user: current_user
       )
     end
   end

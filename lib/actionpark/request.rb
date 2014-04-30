@@ -1,4 +1,4 @@
 module Actionpark
-  class Request < ActiveRecord::Base
+  class Request
   end
 end
