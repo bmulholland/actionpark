@@ -3,5 +3,5 @@ class ApplicationController < ActionController::Base
 
   protect_from_forgery
 
-  after_filter :store_requests
+  before_filter :store_request
 end
