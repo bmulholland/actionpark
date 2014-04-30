@@ -21,4 +21,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency "capybara"
   s.add_development_dependency "guard-rspec"
   s.add_development_dependency "zeus"
+  s.add_development_dependency "better_errors"
 end
