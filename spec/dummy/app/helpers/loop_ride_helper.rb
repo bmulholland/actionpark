@@ -1,0 +1,2 @@
+module LoopRideHelper
+end
