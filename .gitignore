@@ -2,9 +2,9 @@
 *.swp
 capybara-*.html
 .rspec
-/log
-/tmp
-/db/*.sqlite3
+/spec/dummy/log
+/spec/dummy/tmp
+/spec/dummy/db/*.sqlite3
 /public/system
 /coverage/
 /spec/tmp
