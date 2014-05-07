@@ -40,4 +40,8 @@ RSpec.configure do |config|
   # This will include the routing helpers in the specs so that we can use
   # # <engine>_path, etc., to get to the routes.
   config.include Actionpark::Engine.routes.url_helpers
+
+  config.before(:each) do
+    User.create(name: "Test User")
+  end
 end
