@@ -1,10 +1,6 @@
 require 'spec_helper'
 
 describe LoopRideController do
-  before do
-    #allow(controller).to receive(current_user)
-  end
-
   describe "GET 'start'" do
     it "returns http success" do
       get 'start'
