@@ -3,6 +3,8 @@ ENV["RAILS_ENV"] ||= 'test'
 require File.expand_path("../../spec/dummy/config/environment", __FILE__)
 require 'rspec/rails'
 
+ENGINE_RAILS_ROOT = File.join(File.dirname(__FILE__), '../')
+
 # Requires supporting ruby files with custom matchers and macros, etc,
 # in spec/support/ and its subdirectories.
 Dir[Rails.root.join("spec/support/**/*.rb")].each { |f| require f }
@@ -34,4 +36,8 @@ RSpec.configure do |config|
   # the seed, which is printed after each run.
   #     --seed 1234
   config.order = "random"
+
+  # This will include the routing helpers in the specs so that we can use
+  # # <engine>_path, etc., to get to the routes.
+  config.include Actionpark::Engine.routes.url_helpers
 end
