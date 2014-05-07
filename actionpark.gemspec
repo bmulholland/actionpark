@@ -7,8 +7,8 @@ require "actionpark/version"
 Gem::Specification.new do |s|
   s.name        = "actionpark"
   s.version     = Actionpark::VERSION
-  s.authors     = ["Brendan Mulholland", "Jennifer Cooper"]
-  s.email       = ["actionpark@bmulholland.ca", "cooper.jennl@gmail.com"]
+  s.authors     = ["Brendan Mulholland", "Jennifer Cooper", "Florida Elago"]
+  s.email       = ["actionpark@bmulholland.ca", "cooper.jennl@gmail.com", "florida.elago@gmail.com"]
   s.homepage    = "http://en.wikipedia.org/wiki/Action_Park"
   s.summary     = "A reputation for poorly designed, unsafe rides; underaged, undertrained, and often under-the-influence staff; intoxicated, unprepared visitors; and a consequently poor safety record."
   s.description = "A reputation for poorly designed, unsafe rides; underaged, undertrained, and often under-the-influence staff; intoxicated, unprepared visitors; and a consequently poor safety record."
