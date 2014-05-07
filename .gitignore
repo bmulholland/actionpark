@@ -7,3 +7,5 @@ spec/dummy/tmp/
 spec/dummy/.sass-cache
 
 *.swp
+
+.DS_Store
