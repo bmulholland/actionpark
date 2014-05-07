@@ -11,6 +11,13 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 0) do
+ActiveRecord::Schema.define(:version => 20140507031829) do
+
+  create_table "actionpark_requests", :force => true do |t|
+    t.string   "controller_name"
+    t.string   "action_name"
+    t.integer  "user_id"
+    t.datetime "created_at"
+  end
 
 end
