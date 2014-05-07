@@ -3,7 +3,6 @@ require 'spec_helper'
 describe LoopRideController do
   before do
     #allow(controller).to receive(current_user)
-    allow(Actionpark::Request).to receive(:create)
   end
 
   describe "GET 'start'" do
@@ -12,8 +11,7 @@ describe LoopRideController do
       response.should be_success
     end
     it "stores request" do
-      expect(Actionpark::Request).to receive(:create)
-      get 'start'
+      expect{get 'start'}.to change{Actionpark::Request.count}.by(1)
     end
   end
 
