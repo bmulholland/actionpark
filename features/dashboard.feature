@@ -6,4 +6,4 @@ Feature: Dashboard
   Scenario: Dashboard list requests
     Given a user has made a request
     When I am on the dashboard
-    Then I see the user's request
+    Then I should see the user's request
