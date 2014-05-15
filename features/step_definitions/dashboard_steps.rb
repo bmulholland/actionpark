@@ -4,7 +4,7 @@ Given(/^a user has made a request$/) do
 end
 
 When(/^I am on the dashboard$/) do
-  visit dashboard_path
+  visit "actionpark/dashboard"
 end
 
 Then(/^I should see the user's request$/) do
