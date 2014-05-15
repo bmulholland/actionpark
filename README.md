@@ -5,7 +5,7 @@ A reputation for poorly designed, unsafe rides; underaged, undertrained, and oft
 
 ![Action Park Logo](http://upload.wikimedia.org/wikipedia/en/a/a1/Action_Park_logo.png "Action Park Logo")
 
-To install:
+###To install:
 
 Add the ActionPark to your Gemfile
 
@@ -27,7 +27,7 @@ rake actionpark:install:migrations
 rake db:migrate
 ```
 
-###To Run Tests
+###To Run Tests:
 
 Prepare your test database
 
