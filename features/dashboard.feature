@@ -11,5 +11,6 @@ Feature: Dashboard
   Scenario: Filter users
     Given users are available
     And requests have been created
+    And I am on the dashboard
     When I filter for user id "1"
     Then I should see the actions for user with id "1"
