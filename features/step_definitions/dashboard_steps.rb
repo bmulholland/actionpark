@@ -1,6 +1,6 @@
 Given(/^a user has made a request$/) do
   user = User.create(name: "Drunk User")
-  @request = Request.create(user_id: user.id, action_name: "death", controller_name: "worst_ride_ever")
+  @request = Actionpark::Request.create(user_id: user.id, action_name: "death", controller_name: "worst_ride_ever")
 end
 
 When(/^I am on the dashboard$/) do
