@@ -1,3 +1,8 @@
+<%= form_tag("/dashboard", method: "get") do %>
+  <%= label_tag(:user_id, "User ID") %>
+  <%= text_field_tag(:user_id) %>
+  <%= submit_tag("Filter Actions") %>
+<% end %>
 <ul>
   <% for request in @requests %>
     <li><%= request.user_id %> loaded <%= request.action_name %> <%= request.controller_name %></li>
