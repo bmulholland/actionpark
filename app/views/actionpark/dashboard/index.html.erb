@@ -1,5 +1,21 @@
-<ul>
+<%= form_tag("/dashboard", method: "get") do %>
+  <%= label_tag(:user_id, "User ID") %>
+  <%= text_field_tag(:user_id) %>
+  <%= submit_tag("Filter Actions") %>
+<% end %>
+<table>
+  <tr>
+    <th>User ID</th>
+    <th>Action</th>
+    <th>Controller</th>
+    <th>When</th>
+  </tr>
   <% for request in @requests %>
-    <li><%= request.user_id %> loaded <%= request.action_name %> <%= request.controller_name %></li>
+    <tr>
+      <td><%= request.user_id %></td>
+      <td><%= request.action_name %></td>
+      <td><%= request.controller_name %></td>
+      <td><%= time_ago_in_words(request.created_at) %></td>
+    </tr>
   <% end %>
-</ul>
+</table>
