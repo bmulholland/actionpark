@@ -35,7 +35,14 @@ Prepare your test database
 rake db:test:prepare
 ```
 
+RSpec
+
 ```
 rspec spec
 ```
 
+Cucumber
+
+```
+cucumber features
+```
