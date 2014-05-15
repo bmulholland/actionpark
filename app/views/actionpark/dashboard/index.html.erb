@@ -1,1 +1,5 @@
-test
+<ul>
+  <% for request in @requests %>
+    <li><%= request.user_id %> loaded <%= request.action_name %> <%= controller_name %></li>
+  <% end %>
+</ul>
