@@ -23,4 +23,8 @@ Gem::Specification.new do |s|
   s.add_development_dependency "terminal-notifier-guard"
   s.add_development_dependency "zeus"
   s.add_development_dependency "better_errors"
+  s.add_development_dependency "cucumber-rails"
+  s.add_development_dependency "database_cleaner"
+  s.add_development_dependency "pry"
+  s.add_development_dependency "pry-debugger"
 end
